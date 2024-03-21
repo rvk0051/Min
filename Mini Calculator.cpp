@@ -7,13 +7,13 @@ class calc{
 		void input(){
 			cout<<"Enter operands";
 			cin>>a>>b;
+			cout<<"Enter operator";
+			cin>>ch;
 		}
 		void output(){
 			cout<<"Answer= "<<result;
 		}
 		void menu(){
-			cout<<"Enter operator";
-			cin>>ch;
 			switch(ch){
 				case '+':
 					result=a+b;
@@ -32,8 +32,8 @@ class calc{
 };
 main(){
 	calc c;
-	c.input();
-	c.menu();
-	c.output();
+	c.input();//Recieves operands and operators as input.
+	c.menu();//Does the operation.
+	c.output();//Displays the result.
 	return 0;
 }
